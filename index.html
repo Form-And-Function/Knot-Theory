@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title>Braids</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="color1">
+        <div id="line1" class="throughline"></div>
+        <div id="line2" class="throughline"></div>
+        <div id="line3" class="throughline"></div>
+        <div id="line4" class="throughline"></div>
+        <div id="line5" class="throughline"></div>
+        <div id="line6" class="throughline"></div>
+        <div id="line7" class="throughline"></div>
+        <h1>Braids</h1>
+        <div class="wrap">
+
+
+
+            <img src="img/SVG/goodArtboard 1.svg" alt="a braid with no loop">
+
+            <img src="img/SVG/Artboard 1.svg" alt="not a braid with a loop">
+            <div class="info">
+                <p>
+                    <h3>Braid:</h3>
+                    <ul>
+                        <li> A set of n strings, all of which are attached to a horizontal bar at the top and at the
+                            bottom
+                        </li>
+                        <li> The string always heads in one direction from the top to the bottom bar (ie cannot make a U
+                            turn and travel back up)
+                        </li>
+                    </ul>
+
+
+                </p>
+
+            </div>
+        </div>
+
+        Number of strands:
+        <input type="range" id="numStrands" min="1" max="6"></select>
+        Number of crossings:
+        <input type="range" id="numCrossings" min="1" max="10"></select>
+
+        <h3 id="make_a_braid">Make a Braid!</h3>
+        <div id="braid"></div>
+    </div>
+
+    <div class="color2">
+        <h3>Ambient Isotopy</h3>
+
+        <img src="img/SVG/dquao1Artboard 1.svg" alt="">
+        <div class="info">
+            <p>
+                Two braids are “equivalent” if we can rearrange them to look the same without passing the strings
+                through others or themselves, keeping the top and bottom bars fixed, and the strings attached to those
+                bars.
+                Think of these as strings in real life that you can “untangle” or stretch to change their 2D
+                projections.
+
+            </p>
+            <p>σ <sub>1</sub> σ <sub>2</sub> = σ<sub>2</sub>σ<sub>1</sub></p>
+        </div>
+
+        <br>
+        <div class="info">
+        <p>σ<sub>1</sub>σ<sub>2</sub>σ<sub>1</sub> = σ<sub>2</sub>σ<sub>1</sub>σ<sub>2</sub></p>
+        <p>Yang-Baxter Equation (aka Reidimister type III!)</p>
+    </div>
+    <img src="img/SVG/equal2Artboard 1.svg" alt="">
+
+
+    </div>
+    <div id="color3">
+        <h3>Group Theory</h3>
+        <div class="info">Every group has
+            <ol>
+                <li>An operation
+                    <br>
+                    <img src="img/SVG/group1Artboard 1.svg" alt="">
+
+
+                </li>
+        
+                <li>An identity</li>
+                <img src="img/SVG/group3Artboard 1.svg" alt="">
+        
+                <li>An inverse</li>
+                <img src="img/SVG/group2Artboard 1.svg" alt="">
+
+                <li>Associativity</li>
+                <img src="img/SVG/group4Artboard 1.svg" alt="">
+            </ol>
+
+            <br>
+            Infinite braids are made of a finite number of <strong>generators</strong>.
+
+
+        </div>
+    </div>
+    <div id="color4">
+        <h3>Braid Closures</h3>
+        <div class="info">We can pull the bottom bar around and glue it to the top bar to form a knot or link. This is the <strong> closure of a braid </strong>.
+        </div>
+        <img src="img/SVG/traceArtboard 1.svg" alt="">
+        
+
+        <!--
+        <select id="closure">
+            <option value="plat">Plat</option>
+            <option value="trace">Trace</option>
+        </select>-->
+
+        <div class="info">
+            <h4>Alexander’s Theorem</h4>
+            All knots and links can be represented as closed braids.
+            <ul>
+                <li>Proved in 1923</li>
+                <li>Procedure: Find a point in the plane about which the strings of the link always turn in the same direction 
+                    “Open up” braid.  
+
+                </li>
+                <li>Yamada-Vogel alternate algorithm of transforming knot/links into closed braid.</li>
+                <li>How do we know when the closures of two braids represent the same link?</li>
+            </ul>
+            
+
+            </div>
+    </div>
+
+
+    <div id="color5">
+
+<h3>Markov Moves</h3>
+<div>Conjugation</div>
+<img src="img/SVG/markov2Artboard 1.svg" alt="">
+
+<div>Stabalization. Like a type II Reidimeister Move.</div>
+<img src="img/SVG/markov2realArtboard 1.svg" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="lib/svg.min.js"></script>
+    <script src="knot.js"></script>
+</body>

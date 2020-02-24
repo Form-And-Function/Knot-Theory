@@ -1,0 +1,198 @@
+$yellow:#F2D888;
+$dark: #A64B63;
+$background: #F2AB6D;
+$orange: #F2785C;
+$pink: #F26666;
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info{
+    background: white;
+    border-radius: 5px;
+    width: 60vw;
+    padding: 10px;
+    
+    
+
+    h3{
+        text-align: center;
+    }
+
+    img{
+        flex: 1;
+        width: 40%;
+    }
+}
+.color1{
+    margin: 8px;
+}
+.color2{
+    background: linear-gradient($yellow 0%, $background 25%);
+    padding: 20px;
+    height: 1400px;
+
+    img{
+        display: inline-block;
+        height: 600px;
+    }
+
+    .info{
+        width: calc(80vw - 400px);
+        display: inline-block;
+        position: relative;
+        top: -400px;
+    }
+}
+
+#color3
+{
+    background: linear-gradient($background 0%, $orange 25%);
+    padding: 20px;
+
+}
+
+#color4
+{
+    background: linear-gradient($orange 0%, $pink 25%);
+    padding: 20px;
+
+    img{
+        width: 80vw;
+    }
+
+    .info{
+        margin: 50px;
+    }
+}
+#color5{
+    background: linear-gradient($pink 0%, $dark 25%);
+    padding: 20px;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.front{
+    position: relative;
+    z-index: 1;
+}
+
+.back{
+    position: relative;
+    z-index: -1;
+}
+
+
+#img3{
+    float: left;
+}
+
+#img4{
+    float: right;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+h3, h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+h3{
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    background: -webkit-linear-gradient(45deg, $pink 40%, $dark 56%);
+    background-clip: text;
+    font-size: 6em;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+}
+
+body{
+    background: $yellow;
+margin: 0;
+    #make_a_braid{
+        position: relative;
+        right: -700px;
+        top: 200px;
+        transform: rotate(-90deg);
+    }
+    #braid{
+        width: 80vw;
+        height: 300px;
+        margin-top: 50px;
+        left: 10vw;
+    }
+}
+
+.throughline{
+    width: 6px;
+    position: absolute;
+}
+
+#line1{
+    background: $pink;
+    height: 157px;
+    top: 0px;
+    left: 200px;
+}
+
+#line2{
+    background: $pink;
+    height: 6px;
+    width: calc(50vw - 360px);
+    top: 151.4px;
+    left: 200px;
+}
+
+#line3{
+    background: $dark;
+    height: 6px;
+    left: calc(50vw + 170px);
+    top: 151.4px;
+    width: calc(50vw - 215px);
+}
+
+#line4{
+    background: $dark;
+    height: 379.6px;
+    right: 25px;
+    top: 151.4px;
+}
+
+#line5{
+    background: $dark;
+    width: 15vw;
+    height: 6px;
+    right: calc(15vw - 230px);
+    top: 525px;
+}
+#line6{
+    background: $dark;
+    height: 219px;
+    right: 285px;
+    top: 525px;
+}
+#line7{
+    background: $dark;
+    top: 738.4px;
+    right: 285px;
+    width: 50px;
+    height: 6px;
+}
