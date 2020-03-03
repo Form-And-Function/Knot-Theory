@@ -2,6 +2,7 @@
 
 <meta charset="UTF-8">
 <title>Braids</title>
+<!--link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Nunito&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
@@ -14,7 +15,10 @@
         <div id="line5" class="throughline"></div>
         <div id="line6" class="throughline"></div>
         <div id="line7" class="throughline"></div>
-        <h1>Braids</h1>
+        <div class="wrap">
+            <h1 id="title1">Braids</h1>
+        </div>
+
         <div class="wrap">
 
 
@@ -22,12 +26,11 @@
             <img src="img/SVG/goodArtboard 1.svg" alt="a braid with no loop">
 
             <img src="img/SVG/Artboard 1.svg" alt="not a braid with a loop">
-            <div class="info">
+            <div class="info" id="box1">
                 <p>
-                    <h3>Braid:</h3>
+                    <h3>Braid</h3>
                     <ul>
-                        <li> A set of n strings, all of which are attached to a horizontal bar at the top and at the
-                            bottom
+                        <li> A set of n strings, all of which are attached to a horizontal bar at either end bottom
                         </li>
                         <li> The string always heads in one direction from the top to the bottom bar (ie cannot make a U
                             turn and travel back up)
@@ -40,13 +43,19 @@
             </div>
         </div>
 
-        Number of strands:
-        <input type="range" id="numStrands" min="1" max="6"></select>
-        Number of crossings:
-        <input type="range" id="numCrossings" min="1" max="10"></select>
+
 
         <h3 id="make_a_braid">Make a Braid!</h3>
-        <div id="braid"></div>
+        <div id="braid">
+            <div>
+                <span>Number of strands:</span>
+                <input type="range" class="numStrands" min="2" max="6"></select>
+                <span>Number of crossings:</span>
+
+                <input type="range" class="numCrossings" min="1" max="10"></select>
+            </div>
+
+        </div>
     </div>
 
     <div class="color2">
@@ -67,10 +76,10 @@
 
         <br>
         <div class="info">
-        <p>σ<sub>1</sub>σ<sub>2</sub>σ<sub>1</sub> = σ<sub>2</sub>σ<sub>1</sub>σ<sub>2</sub></p>
-        <p>Yang-Baxter Equation (aka Reidimister type III!)</p>
-    </div>
-    <img src="img/SVG/equal2Artboard 1.svg" alt="">
+            <p>σ<sub>1</sub>σ<sub>2</sub>σ<sub>1</sub> = σ<sub>2</sub>σ<sub>1</sub>σ<sub>2</sub></p>
+            <p>Yang-Baxter Equation (aka Reidimister type III!)</p>
+        </div>
+        <img src="img/SVG/equal2Artboard 1.svg" alt="">
 
 
     </div>
@@ -84,10 +93,10 @@
 
 
                 </li>
-        
+
                 <li>An identity</li>
                 <img src="img/SVG/group3Artboard 1.svg" alt="">
-        
+
                 <li>An inverse</li>
                 <img src="img/SVG/group2Artboard 1.svg" alt="">
 
@@ -103,10 +112,11 @@
     </div>
     <div id="color4">
         <h3>Braid Closures</h3>
-        <div class="info">We can pull the bottom bar around and glue it to the top bar to form a knot or link. This is the <strong> closure of a braid </strong>.
+        <div class="info">We can pull the bottom bar around and glue it to the top bar to form a knot or link. This is
+            the <strong> closure of a braid </strong>.
         </div>
         <img src="img/SVG/traceArtboard 1.svg" alt="">
-        
+
 
         <!--
         <select id="closure">
@@ -119,27 +129,28 @@
             All knots and links can be represented as closed braids.
             <ul>
                 <li>Proved in 1923</li>
-                <li>Procedure: Find a point in the plane about which the strings of the link always turn in the same direction 
-                    “Open up” braid.  
+                <li>Procedure: Find a point in the plane about which the strings of the link always turn in the same
+                    direction
+                    “Open up” braid.
 
                 </li>
                 <li>Yamada-Vogel alternate algorithm of transforming knot/links into closed braid.</li>
                 <li>How do we know when the closures of two braids represent the same link?</li>
             </ul>
-            
 
-            </div>
+
+        </div>
     </div>
 
 
     <div id="color5">
 
-<h3>Markov Moves</h3>
-<div>Conjugation</div>
-<img src="img/SVG/markov2Artboard 1.svg" alt="">
+        <h3>Markov Moves</h3>
+        <div>Conjugation</div>
+        <img src="img/SVG/markov2Artboard 1.svg" alt="">
 
-<div>Stabalization. Like a type II Reidimeister Move.</div>
-<img src="img/SVG/markov2realArtboard 1.svg" alt="">
+        <div>Stabalization. Like a type II Reidimeister Move.</div>
+        <img src="img/SVG/markov2realArtboard 1.svg" alt="">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
