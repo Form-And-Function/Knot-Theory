@@ -288,7 +288,7 @@ addSliderFunctionality();
 ///cool lines///
 
 function calculateLayout() {
-  const y1 = $("#title1").height() * 0.744 + $("#title1").offset().top;
+  const y1 = $("#title1").height() * 0.748 + $("#title1").offset().top;
   $("#line1").height(y1);
 
   const x1 = $("#line1").offset().left;
@@ -325,6 +325,6 @@ function calculateLayout() {
     .outerWidth(lineW + BRUSH_WIDTH * 2);
 }
 
-calculateLayout();
+$(document).ready(calculateLayout);
 
 $(window).resize(calculateLayout);
